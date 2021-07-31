@@ -1,0 +1,206 @@
+[buildPlans.iosevka-build]       # <iosevka-build> is your plan name
+family = "Iosevka Build"         # Font menu family name
+spacing = "fixed"                # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
+serifs = "sans"                  # Optional; Values: `sans` or `slab`
+
+###################################################################################################
+# Configure variants
+
+# # Optional; Whether to inherit a `ss##` variant
+# [buildPlans.iosevka-build.variants]
+# inherits = "ss01"
+
+# Optional; Configure single character's variant
+[buildPlans.iosevka-build.variants.design]
+cv01 = 1    # A cap straight
+cv02 = 1    # B cap straight
+cv03 = 1    # C cap serifless
+cv04 = 2    # D cap curly
+cv05 = 1    # E cap serifless
+cv06 = 1    # F cap serifless
+cv07 = 4    # G cap toothed
+cv08 = 1    # H cap serifless
+cv09 = 3    # I cap short serifs
+cv10 = 2    # J cap serified
+cv11 = 2    # K cap curly
+cv12 = 1    # L cap serifless
+cv13 = 1    # M cap short middle leg
+cv14 = 1    # N cap symmetric
+cv15 = 1    # P cap straight
+cv16 = 4    # Q cap crossing tail
+cv17 = 1    # R cap straight
+cv18 = 1    # S cap serifless
+cv19 = 1    # T cap serifless
+cv20 = 3    # U cap serifless
+cv21 = 1    # V cap straight
+cv22 = 2    # W cap curly short middle top
+cv23 = 1    # X cap straight
+cv24 = 1    # Y cap straight
+cv25 = 1    # Z cap straight
+cv27 = 1    # b toothed
+cv28 = 1    # c serifless
+cv29 = 1    # d toothed
+cv33 = 1    # h straight
+cv34 = 10   # i serified flat tailed
+cv35 = 6    # j flat hook serified
+cv37 = 10   # l serified flat tailed
+cv42 = 9    # r compact
+cv43 = 1    # s serifless
+cv44 = 2    # t flat hook
+cv49 = 6    # y cursive flat terminal hook
+cv53 = 1    # Λ lambda cap straight
+cv54 = 2    # α alpha straight tailed
+cv55 = 1    # γ gamma cap straight
+cv56 = 1    # ε epsilon serifless
+cv57 = 2    # λ lambda top tailed
+ampersand = "upper-open"
+ascii-grave = "straight"
+ascii-single-quote = "straight"
+asterisk = "penta-low"
+at = "short"
+bar = "natural-slope"
+brace = "straight"
+caret = "high"
+cent = "through"
+dollar = "through"
+number-sign = "slanted-open"
+paren = "normal"
+percent = "rings-segmented-slash"
+question = "smooth"
+tilde = "low"
+underscore = "low"
+punctuation-dot = "square"
+zero = "dotted-oval"
+two = "straight-neck"
+three = "flattop"
+four = "closed"
+nine = "open-contour"
+six = "open-contour"
+eight = "two-circles"
+
+# Optional; Configure single character's variant for Upright and Oblique; Overrides [design]
+[buildPlans.iosevka-build.variants.upright]
+cv26 = 1    # a double storey
+cv30 = 1    # e straight
+cv31 = 16   # f serifless bottom flat top crossbar at x height
+cv32 = 7    # g single storey flat hook earless
+cv36 = 1    # k straight
+cv38 = 9    # m earless double arch
+cv39 = 3    # n earless straight
+cv40 = 2    # p earless
+cv41 = 3    # q earless
+cv45 = 1    # u straight
+cv46 = 1    # v straight
+cv47 = 1    # w straight short middle top
+cv48 = 1    # x straight
+cv50 = 1    # z straight
+
+# Optional; Configure single character's variant for Italic only; Overrides [design]
+[buildPlans.iosevka-build.variants.italic]
+cv26 = 10   # a single storey earless tailed
+cv30 = 2    # e curly
+cv31 = 14   # f extended flat top bottom hook
+cv32 = 7    # g single storey flat hook
+cv36 = 2    # k curly
+cv38 = 2    # m straight middle shortleg
+cv39 = 1    # n straight
+cv40 = 1    # p straight
+cv41 = 1    # q straight
+cv45 = 4    # u tailed
+cv46 = 2    # v curly
+cv47 = 2    # w curly short middle top
+cv48 = 2    # x curly
+cv50 = 4    # z curly
+seven = 'curly-serifless'
+
+# End variant section
+###################################################################################################
+
+###################################################################################################
+# Override default building weights
+# When buildPlans.<plan name>.weights is absent, all weights would built and mapped to
+# default values.
+# IMPORTANT : Currently "menu" and "css" property only support numbers between 0 and 1000.
+#             and "shape" properly only supports number between 100 and 900 (inclusive).
+#             If you decide to use custom weights you have to define all the weights you
+#             plan to use otherwise they will not be built.
+[buildPlans.iosevka-build.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.iosevka-build.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+# End weight section
+###################################################################################################
+
+###################################################################################################
+# Override default building slope sets
+# Format: <upright|italic|oblique> = <"normal"|"italic"|"oblique">
+# When this section is absent, all slopes would be built.
+
+[buildPlans.iosevka-build.slopes.upright]
+angle = 0             # Angle in degrees. Valid range [0, 15]
+shape = "upright"     # Slope grade used for shape selection.  `upright` | `oblique` | `italic`
+menu  = "upright"     # Slope grade used for naming.           `upright` | `oblique` | `italic`
+css   = "normal"      # Slope grade used for webfont CSS.      `normal`  | `oblique` | `italic`
+
+[buildPlans.iosevka-build.slopes.oblique]
+angle = 9.4
+shape = "oblique"
+menu  = "oblique"
+css   = "oblique"
+
+[buildPlans.iosevka-build.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu  = "italic"
+css   = "italic"
+
+# End slope section
+###################################################################################################
+
+###################################################################################################
+# Override default building widths
+# When buildPlans.<plan name>.widths is absent, all widths would built and mapped to
+# default values.
+# IMPORTANT : Currently "shape" property only supports numbers between 434 and 664 (inclusive),
+#             while "menu" only supports integers between 1 and 9 (inclusive).
+#             The "shape" parameter specifies the unit width, measured in 1/1000 em. The glyphs'
+#             width are equal to, or a simple multiple of the unit width.
+#             If you decide to use custom widths you have to define all the widths you plan to use,
+#             otherwise they will not be built.
+
+[buildPlans.iosevka-build.widths.normal]
+shape = 550        # Unit Width, measured in 1/1000 em.
+menu  = 5          # Width grade for the font's names.
+css   = "normal"   # "font-stretch' property of webfont CSS.
+
+# [buildPlans.iosevka-build.widths.normal]
+# shape = 500        # Unit Width, measured in 1/1000 em.
+# menu  = 5          # Width grade for the font's names.
+# css   = "normal"   # "font-stretch' property of webfont CSS.
+
+# [buildPlans.iosevka-build.widths.extended]
+# shape = 600
+# menu  = 7
+# css   = "expanded"
+
+# End width section
+###################################################################################################
+
+###################################################################################################
+# Metric overrides
+# Certain metrics like line height (leading) could be overridden in your build plan file.
+# Edit the values to change the metrics. Remove this section when overriding is not needed.
+
+[buildPlans.iosevka-build.metric-override]
+leading = 1100
+sb = "default_sb * 1.0625 + 15"
+dotSize = "blend(weight, [100, 50], [400, 125], [900, 180])"
+
+# End metric override section
+###################################################################################################
