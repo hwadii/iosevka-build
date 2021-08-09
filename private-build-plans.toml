@@ -2,6 +2,7 @@
 family = "Iosevka Build"         # Font menu family name
 spacing = "fixed"                # Optional; Values: `normal`, `term`, `fontconfig-mono`, or `fixed`
 serifs = "sans"                  # Optional; Values: `sans` or `slab`
+no-cv-ss = true
 
 ###################################################################################################
 # Configure variants
@@ -65,7 +66,7 @@ cent = "through"
 dollar = "through"
 number-sign = "slanted-open"
 paren = "normal"
-percent = "rings-segmented-slash"
+percent = "dots"
 question = "smooth"
 tilde = "low"
 underscore = "low"
