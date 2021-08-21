@@ -13,7 +13,7 @@ no-cv-ss = true
 
 # Optional; Configure single character's variant
 [buildPlans.iosevka-build.variants.design]
-cv01 = 1    # A cap straight
+capital-a = "curly-serifless"
 cv02 = 1    # B cap straight
 cv03 = 1    # C cap serifless
 cv04 = 2    # D cap curly
@@ -73,7 +73,7 @@ underscore = "low"
 punctuation-dot = "square"
 zero = "dotted-oval"
 two = "straight-neck"
-three = "flattop"
+three = "flat-top"
 four = "closed"
 nine = "open-contour"
 six = "open-contour"
