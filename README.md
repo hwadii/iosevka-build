@@ -1,3 +1,3 @@
 # Iosevka Build
 
-Built at commit  https://github.com/be5invis/Iosevka/commit/65596463253a4a0031030e6d53acf73da1ba58be.
+Built at commit  https://github.com/be5invis/Iosevka/commit/42bf35a37230bf58ef34c7c82839eaedbc2fb112.

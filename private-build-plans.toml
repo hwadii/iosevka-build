@@ -184,3 +184,5 @@ dotSize = "blend(weight, [100, 50], [400, 125], [900, 180])"
 
 # End metric override section
 ###################################################################################################
+[collectPlans.iosevka-build]
+from = ["iosevka-build"]
