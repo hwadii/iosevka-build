@@ -178,7 +178,7 @@ css   = "normal"   # "font-stretch' property of webfont CSS.
 # Edit the values to change the metrics. Remove this section when overriding is not needed.
 
 [buildPlans.iosevka-build.metric-override]
-leading = 1100
+leading = 1200
 sb = "default_sb * 1.0625 + 15"
 dotSize = "blend(weight, [100, 50], [400, 125], [900, 180])"
 
