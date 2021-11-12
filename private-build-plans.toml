@@ -154,11 +154,6 @@ css   = "italic"
 #             If you decide to use custom widths you have to define all the widths you plan to use,
 #             otherwise they will not be built.
 
-[buildPlans.iosevka-build.widths.normal]
-shape = 550        # Unit Width, measured in 1/1000 em.
-menu  = 5          # Width grade for the font's names.
-css   = "normal"   # "font-stretch' property of webfont CSS.
-
 # [buildPlans.iosevka-build.widths.normal]
 # shape = 500        # Unit Width, measured in 1/1000 em.
 # menu  = 5          # Width grade for the font's names.
@@ -176,11 +171,6 @@ css   = "normal"   # "font-stretch' property of webfont CSS.
 # Metric overrides
 # Certain metrics like line height (leading) could be overridden in your build plan file.
 # Edit the values to change the metrics. Remove this section when overriding is not needed.
-
-[buildPlans.iosevka-build.metric-override]
-leading = 1200
-sb = "default_sb * 1.0625 + 15"
-dotSize = "blend(weight, [100, 50], [400, 125], [900, 180])"
 
 # End metric override section
 ###################################################################################################
