@@ -1,0 +1,12 @@
+#!/bin/sh
+
+if [ "$1" = "rebuild" ]; then
+  npm run build -- super-ttc::iosevka-build
+fi
+fonts_path="$HOME/.local/share/fonts/iosevka-build"
+iosevka_build_path="$HOME/code/iosevka-build"
+cp -vr dist/.super-ttc/iosevka-build.ttc "$fonts_path"
+cp -vr dist/iosevka-build/ttf/* $fonts_path
+echo "# Iosevka Build
+
+Built at commit  https://github.com/be5invis/Iosevka/commit/$(git rev-parse @ | tr -d '\n')." > "$iosevka_build_path/README.md"
