@@ -4,6 +4,7 @@ if [ "$1" = "rebuild" ]; then
   npm run build -- super-ttc::iosevka-build
   npm run build -- super-ttc::iosevka-ss09-build
   npm run build -- super-ttc::iosevka-random
+  npm run build -- super-ttc::iosevka-comfy
 fi
 fonts_path="$HOME/.local/share/fonts"
 iosevka_build_path="$HOME/code/iosevka-build"
