@@ -684,3 +684,32 @@ leading = 1100
 ###################################################################################################
 [collectPlans.iosevka-comfy]
 from = ["iosevka-comfy"]
+
+[buildPlans.iosevka-output]
+family = "Iosevka Output"
+spacing = "term"
+serifs = "sans"
+
+[buildPlans.iosevka-output.variants]
+inherits = "ss18"
+
+[buildPlans.iosevka-output.variants.design]
+# b = "toothed"
+f = "flat-hook"
+l = "tailed-serifed"
+q = "straight"
+t = "flat-hook"
+lower-alpha = "crossing"
+zero = "slashed"
+four = "semi-open"
+seven = "bend-serifed"
+eight = "crossing-asymmetric"
+asterisk = "hex-low"
+number-sign = "upright"
+
+[buildPlans.iosevka-output.metric-override]
+leading = 1150
+parenSize = 850
+
+[collectPlans.iosevka-output]
+from = ["iosevka-output"]
