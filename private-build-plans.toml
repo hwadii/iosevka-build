@@ -695,7 +695,7 @@ inherits = "ss18"
 
 [buildPlans.iosevka-output.variants.design]
 # b = "toothed"
-f = "flat-hook"
+f = "flat-hook-crossbar-at-x-height"
 l = "tailed-serifed"
 q = "straight"
 t = "flat-hook"
@@ -708,7 +708,7 @@ asterisk = "hex-low"
 number-sign = "upright"
 
 [buildPlans.iosevka-output.metric-override]
-leading = 1150
+leading = 1130
 parenSize = 850
 
 [collectPlans.iosevka-output]
